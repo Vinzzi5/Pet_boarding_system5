@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doggy Day Care</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navheading">
+            <figure class="logo">
+                <img src="img/logo_1500x1600.jpg" alt="doggy day care" width="1500" height="1600" />
+                <figcaption class="offscreen">Doggy day care</figcaption>
+            </figure>
+            <h1 class="navHeading">Doggy Day Care</h1>
+        </div>
+            <ul class="navbarelements">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About US</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="booking contactform">
+            <h2>Booking Page for Pet Training</h2>
+
+            <form action="/bookingt" method="post">
+                <fieldset>
+                    <legend>Book a slot</legend>
+                    <p>
+                        <label for="name">Pet's Name: </label>
+                        <input class="fields" type="text" name="name" id="name" placeholder="Pet's name" required />
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input class = "fields" type="tel" name="phone" id="phone" placeholder="Your number" pattern="[0-9]{10}"
+                        required>
+                        <small>should only contain 10 digits</small>
+                    </p>
+
+                    <p>
+                        <label for="Date">Date:</label>
+                        <input class = "fields" type="date" name="date" id="Date" min = "2023-04-13" max="2023-04-30"
+                        required>
+                    </p>
+
+                    <!-- <p>
+                        <label for="Timeslot">Choose Timeslot:</label>
+                        <input class = "fields" type="time" name="timeslot" id="Timeslot" min="10:00" max="18:00" value="10:00" required step="3600">
+                        <small>Service timmings are from 10:00 to 18:00</small>
+                    </p> -->
+
+                    <p>
+                        <label for="Timeslot">Choose Timeslot:</label>
+                        <input class = "fields" type="number" name="timeslot" id="Timeslot" min="10" max="18" value="10:00" required step="1">
+                        <small>Service timmings are from 10:00 to 18:00</small>
+                    </p>
+
+                </fieldset>
+                <div class="buttonholder">
+                <button class="bookbutton" type="submit">Send</button>
+                <button class="bookbutton" type="reset">Reset</button>
+            </div>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <div class="center">
+        <p>copyright &copy; doggydaycare.com</p>
+    </div>
+    </footer>
+</body>
+
+</html>

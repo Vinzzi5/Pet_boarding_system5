@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doggy Day Care</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure class="logo">
+                <img src="img/logo_1500x1600.jpg" alt="doggy day care" width="1500" height="1600" />
+                <figcaption class="offscreen">Doggy day care</figcaption>
+            </figure>
+            <h1 class="navHeading">Doggy Day Care</h1>
+        </nav>
+    </header>
+    <main>
+        <article class="signInPage">
+            <section class="signInHeader">
+                <figure class="signInImage">
+                    <img src="img/sign_in_225x225.jpeg" alt="error" width="225" height="225" />
+                    <figcaption class="offscreen">Golden Retriver</figcaption>
+                </figure>
+                <h2>Sign In</h2>
+            </section>
+
+            <section>
+                <form class="form" action="/signinc" method="post">
+                    <label for="Email">Email</label>
+                    <input placeholder="example@gmail.com" class="field" type="email" name="email" id="Email" autocomplete="on" required/>
+
+                    <label for="Password">Password</label>
+                    <input placeholder="Your password" class="field" type="password" name="password" id="Password" required/>
+
+                    <button class="signInButton" type="submit">Sign In</button>
+                </form>
+            </section>
+
+            <section>
+                <div class="center">
+                    <p>Don't have an account yet? <a href="signup.html">Sign Up</a></p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="center">
+        <p>copyright &copy; doggydaycare.com</p>
+    </div>
+    </footer>
+</body>
+
+</html>
